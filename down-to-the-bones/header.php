@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-	<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta charset="utf-8">
+	<style><?php include 'fe-includes/critical-home.css'; ?></style>
+	<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);function loadCSS(e,t,n){"use strict";var i=window.document.createElement("link");var o=t||window.document.getElementsByTagName("script")[0];i.rel="stylesheet";i.href=e;i.media="only x";o.parentNode.insertBefore(i,o);setTimeout(function(){i.media=n||"all"})};loadCSS('<?php echo THEME_URL; ?>/css/style.css');</script>
 	<title><?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
-	
-	<link rel='stylesheet' href='<?php echo THEME_URL; ?>/style.css?v=1' type='text/css' media='all' />
-
-    <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-
-    <?php wp_head(); ?> 
-    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!--[if gt IE 8]><!-->
+	<noscript><link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/style.css"></noscript>
+	<!--<![endif]-->
+	<!--[if IE 8]>
+	<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/old-ie.css">
+	<![endif]-->
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/really-old-ie.css">
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="<?php echo THEME_URL; ?>/js/html5shiv-printshiv.js"></script>
+	<![endif]-->
 </head>
 
-<body <?php body_class(); ?>>
+<body>
+
